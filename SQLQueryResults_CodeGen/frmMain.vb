@@ -5,6 +5,8 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        ' ConnectionString para SqlServer = Data Source=(local);Initial Catalog=Chinook;Integrated Security=True
+        ' ConnectionString para PostGreSql = Host=localhost;Port=5432;Database=esconversao;Username=postgres;Password=autocom
         txtConnectionString.Text = My.Settings.ConnectionString
     End Sub
 

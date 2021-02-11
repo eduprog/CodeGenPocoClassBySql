@@ -56,10 +56,10 @@ Partial Class frmMain
         Me.txtConnectionString.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtConnectionString.Location = New System.Drawing.Point(9, 44)
-        Me.txtConnectionString.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtConnectionString.Margin = New System.Windows.Forms.Padding(2)
         Me.txtConnectionString.Multiline = True
         Me.txtConnectionString.Name = "txtConnectionString"
-        Me.txtConnectionString.Size = New System.Drawing.Size(398, 40)
+        Me.txtConnectionString.Size = New System.Drawing.Size(988, 40)
         Me.txtConnectionString.TabIndex = 4
         '
         'Label1
@@ -77,34 +77,34 @@ Partial Class frmMain
         Me.txtQuery.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtQuery.Location = New System.Drawing.Point(9, 114)
-        Me.txtQuery.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtQuery.Margin = New System.Windows.Forms.Padding(2)
         Me.txtQuery.Multiline = True
         Me.txtQuery.Name = "txtQuery"
-        Me.txtQuery.Size = New System.Drawing.Size(280, 96)
+        Me.txtQuery.Size = New System.Drawing.Size(870, 96)
         Me.txtQuery.TabIndex = 0
         '
         'txtCode
         '
         Me.txtCode.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtCode.Location = New System.Drawing.Point(9, 410)
-        Me.txtCode.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCode.Location = New System.Drawing.Point(9, 498)
+        Me.txtCode.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCode.Multiline = True
         Me.txtCode.Name = "txtCode"
         Me.txtCode.ReadOnly = True
         Me.txtCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.txtCode.Size = New System.Drawing.Size(399, 183)
+        Me.txtCode.Size = New System.Drawing.Size(989, 183)
         Me.txtCode.TabIndex = 2
         '
         'btnGenerate
         '
         Me.btnGenerate.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnGenerate.Location = New System.Drawing.Point(323, 611)
-        Me.btnGenerate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnGenerate.Location = New System.Drawing.Point(913, 685)
+        Me.btnGenerate.Margin = New System.Windows.Forms.Padding(2)
         Me.btnGenerate.Name = "btnGenerate"
-        Me.btnGenerate.Size = New System.Drawing.Size(83, 24)
+        Me.btnGenerate.Size = New System.Drawing.Size(83, 38)
         Me.btnGenerate.TabIndex = 3
-        Me.btnGenerate.Text = "Generate"
+        Me.btnGenerate.Text = "Gerar Classe"
         Me.btnGenerate.UseVisualStyleBackColor = True
         '
         'MenuStrip1
@@ -113,7 +113,7 @@ Partial Class frmMain
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(418, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1008, 24)
         Me.MenuStrip1.TabIndex = 7
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -127,7 +127,7 @@ Partial Class frmMain
         'FileToolStripMenuItem
         '
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(93, 22)
         Me.FileToolStripMenuItem.Text = "E&xit"
         '
         'ScreenToolStripMenuItem
@@ -140,8 +140,8 @@ Partial Class frmMain
         'ClearQueryCodeToolStripMenuItem
         '
         Me.ClearQueryCodeToolStripMenuItem.Name = "ClearQueryCodeToolStripMenuItem"
-        Me.ClearQueryCodeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ClearQueryCodeToolStripMenuItem.Text = "&Clear Query && Code"
+        Me.ClearQueryCodeToolStripMenuItem.Size = New System.Drawing.Size(220, 22)
+        Me.ClearQueryCodeToolStripMenuItem.Text = "&Limpar Query Sql && Código"
         '
         'ClearAllToolStripMenuItem
         '
@@ -159,22 +159,24 @@ Partial Class frmMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvSchemaColumns.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvSchemaColumns.Location = New System.Drawing.Point(9, 236)
-        Me.dgvSchemaColumns.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvSchemaColumns.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvSchemaColumns.Name = "dgvSchemaColumns"
         Me.dgvSchemaColumns.ReadOnly = True
         Me.dgvSchemaColumns.RowTemplate.Height = 24
-        Me.dgvSchemaColumns.Size = New System.Drawing.Size(398, 145)
+        Me.dgvSchemaColumns.Size = New System.Drawing.Size(988, 233)
         Me.dgvSchemaColumns.TabIndex = 1
         '
         'rbCS
         '
         Me.rbCS.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.rbCS.AutoSize = True
-        Me.rbCS.Location = New System.Drawing.Point(-2, 2)
-        Me.rbCS.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rbCS.Checked = True
+        Me.rbCS.Location = New System.Drawing.Point(741, 702)
+        Me.rbCS.Margin = New System.Windows.Forms.Padding(2)
         Me.rbCS.Name = "rbCS"
         Me.rbCS.Size = New System.Drawing.Size(70, 17)
         Me.rbCS.TabIndex = 8
+        Me.rbCS.TabStop = True
         Me.rbCS.Text = "Visual C#"
         Me.rbCS.UseVisualStyleBackColor = True
         '
@@ -182,10 +184,10 @@ Partial Class frmMain
         '
         Me.txtObjectName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtObjectName.Location = New System.Drawing.Point(76, 614)
-        Me.txtObjectName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtObjectName.Location = New System.Drawing.Point(97, 702)
+        Me.txtObjectName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtObjectName.Name = "txtObjectName"
-        Me.txtObjectName.Size = New System.Drawing.Size(87, 20)
+        Me.txtObjectName.Size = New System.Drawing.Size(630, 20)
         Me.txtObjectName.TabIndex = 10
         Me.txtObjectName.Text = "POCOFIRST"
         '
@@ -193,19 +195,18 @@ Partial Class frmMain
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 617)
+        Me.Label4.Location = New System.Drawing.Point(6, 705)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 13)
+        Me.Label4.Size = New System.Drawing.Size(87, 13)
         Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Class Name:"
+        Me.Label4.Text = "Nome da Classe:"
         '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.rbVB)
-        Me.GroupBox1.Controls.Add(Me.rbCS)
-        Me.GroupBox1.Location = New System.Drawing.Point(168, 613)
+        Me.GroupBox1.Location = New System.Drawing.Point(758, 701)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(150, 24)
         Me.GroupBox1.TabIndex = 12
@@ -215,13 +216,11 @@ Partial Class frmMain
         '
         Me.rbVB.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.rbVB.AutoSize = True
-        Me.rbVB.Checked = True
-        Me.rbVB.Location = New System.Drawing.Point(70, 2)
-        Me.rbVB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.rbVB.Location = New System.Drawing.Point(63, 1)
+        Me.rbVB.Margin = New System.Windows.Forms.Padding(2)
         Me.rbVB.Name = "rbVB"
         Me.rbVB.Size = New System.Drawing.Size(82, 17)
         Me.rbVB.TabIndex = 10
-        Me.rbVB.TabStop = True
         Me.rbVB.Text = "Visual Basic"
         Me.rbVB.UseVisualStyleBackColor = True
         '
@@ -230,7 +229,7 @@ Partial Class frmMain
         Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.rbStoredProcedure)
         Me.GroupBox2.Controls.Add(Me.rbQuery)
-        Me.GroupBox2.Location = New System.Drawing.Point(293, 114)
+        Me.GroupBox2.Location = New System.Drawing.Point(883, 114)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(113, 97)
         Me.GroupBox2.TabIndex = 13
@@ -265,20 +264,20 @@ Partial Class frmMain
         Me.Label2.Location = New System.Drawing.Point(9, 220)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 13)
+        Me.Label2.Size = New System.Drawing.Size(160, 13)
         Me.Label2.TabIndex = 14
-        Me.Label2.Text = "SchemaTable:"
+        Me.Label2.Text = "Schema Tabela - Resultado Sql:"
         '
         'Label3
         '
         Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(7, 394)
+        Me.Label3.Location = New System.Drawing.Point(7, 482)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(201, 13)
+        Me.Label3.Size = New System.Drawing.Size(218, 13)
         Me.Label3.TabIndex = 15
-        Me.Label3.Text = "Generated Results Schema POCO Class:"
+        Me.Label3.Text = "POCO Class gerada de acordo com schema:"
         '
         'Label5
         '
@@ -286,16 +285,17 @@ Partial Class frmMain
         Me.Label5.Location = New System.Drawing.Point(9, 98)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(62, 13)
+        Me.Label5.Size = New System.Drawing.Size(65, 13)
         Me.Label5.TabIndex = 16
-        Me.Label5.Text = "Query Text:"
+        Me.Label5.Text = "SQL Query :"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(418, 641)
+        Me.ClientSize = New System.Drawing.Size(1008, 729)
         Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.rbCS)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox2)
@@ -310,10 +310,10 @@ Partial Class frmMain
         Me.Controls.Add(Me.txtConnectionString)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Generate Results Schema POCO Class - On VB - Visual Studio Magazine"
+        Me.Text = "Gera POCO Class de acordo com SqlQuery- On VB - Visual Studio Magazine"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.dgvSchemaColumns, System.ComponentModel.ISupportInitialize).EndInit()
